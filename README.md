@@ -73,7 +73,7 @@ Add permissions to the script:
 chmod +x /usr/local/bin/softether.sh
 ```
 
-Add softether startup config to supervisor:
+Add softether config to supervisor:
 ```
 sudo nano /etc/supervisor/conf.d/softether.conf
 ```
