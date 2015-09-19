@@ -72,7 +72,7 @@ Save the file.
 
 Add config to supervisor:
 ```
-sudo nano /etc/supervisor/conf.d/long_script.conf
+sudo nano /etc/supervisor/conf.d/softether.conf
 ```
 Paste this:
 ```
