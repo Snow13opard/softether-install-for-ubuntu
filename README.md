@@ -44,12 +44,20 @@ chmod 600 *
 chmod 700 vpnserver
 chmod 700 vpncmd
 ```
-
+## Install supervisor to keep SoftEther running
+Install supervisor.
+```
 sudo apt-get install supervisor
-
+```
+Make sure the supervisor service is running.
+```
 sudo service supervisor start
-
+```
+Create a startup config for SoftEther.
+```
 sudo nano /etc/supervisor/conf.d/softether.conf
+```
+Paste this:
 ```
 [program:softether]
 command = /usr/local/vpnserver/vpnserver start
@@ -62,4 +70,7 @@ stderr_logfile = /var/log/supervisor/softether_err.log
 ```
 Save the file.
 
+Reload supervisorctl.
+```
 sudo supervisorctl reload
+```
