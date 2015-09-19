@@ -20,20 +20,30 @@ Install and Configure SoftEther
 ```
 tar xzvf softether* && mv softether* /tmp
 ```
-
+```
 apt-get install build-essential -y
-
+```
+```
 cd vpnserver
+```
+```
 make
-
+```
+```
 cd ..
+```
+```
 sudo cp -r vpnserver /usr/local
+```
+```
 cd /usr/local/vpnserver/
-
+```
+And then change the files permission in order to protect them:
+```
 chmod 600 *
 chmod 700 vpnserver
 chmod 700 vpncmd
-
+```
 
 sudo apt-get install supervisor
 
@@ -49,5 +59,7 @@ autostart = true
 autorestart = true
 stdout_logfile = /var/log/supervisor/softether.log
 stderr_logfile = /var/log/supervisor/softether_err.log
+
+Save the file.
 
 sudo supervisorctl reload
