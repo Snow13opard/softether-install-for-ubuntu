@@ -83,5 +83,10 @@ autorestart=true
 stderr_logfile=/var/log/softether.err.log
 stdout_logfile=/var/log/softether.out.log
 ```
-
-
+Now run these commands to have supervisor acknowledge the softether program.
+```
+supervisorctl reread
+```
+```
+supervisorctl update
+```
