@@ -62,7 +62,7 @@ Paste this:
 ```
 #!/bin/bash
 while true
-do 
+do
 /usr/local/vpnserver/vpnserver start
 done
 ```
