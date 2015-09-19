@@ -55,22 +55,33 @@ sudo service supervisor start
 ```
 Create a startup config for SoftEther.
 ```
-sudo nano /etc/supervisor/conf.d/softether.conf
+sudo nano /usr/local/bin/softether.sh
+```
+Paste this:
+```
+#!/bin/bash
+while true
+do 
+/usr/local/vpnserver/vpnserver start
+done
+```
+```
+chmod +x /usr/local/bin/softether.sh
+```
+Save the file.
+
+Add config to supervisor:
+```
+sudo nano /etc/supervisor/conf.d/long_script.conf
 ```
 Paste this:
 ```
 [program:softether]
-command=/usr/local/vpnserver/vpnserver start
-stopsignal=stop
-user=root
+command=/usr/local/bin/softether.sh
 autostart=true
 autorestart=true
-stdout_logfile=/var/log/supervisor/softether.log
-stderr_logfile=/var/log/supervisor/softether_err.log
+stderr_logfile=/var/log/softether.err.log
+stdout_logfile=/var/log/softether.out.log
 ```
-Save the file.
 
-Reload supervisorctl.
-```
-sudo supervisorctl reload
-```
+
