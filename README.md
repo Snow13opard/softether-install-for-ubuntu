@@ -106,3 +106,35 @@ Now type:
 ```
 check
 ```
+### Change Admin Password
+```
+./vpncmd
+```
+Then use this command to change server password:
+```
+ServerPasswordSet
+```
+### Create a VirtualHub
+```
+HubCreate VPN
+```
+```
+Hub VPN
+```
+### Enable SecureNAT
+```
+SecureNatEnable
+```
+### Create and Manage Users
+By using this command we create a user named "test"
+```
+UserCreate test
+```
+Now lets set a password for the new user.
+```
+UserPasswordSet test
+```
+### Enable L2TP/IPSec connections
+```
+IPsecEnable
+```
