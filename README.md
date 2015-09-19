@@ -78,6 +78,7 @@ Paste this:
 ```
 [program:softether]
 command=/usr/local/bin/softether.sh
+user=root
 autostart=true
 autorestart=true
 stderr_logfile=/var/log/softether.err.log
