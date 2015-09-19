@@ -2,6 +2,7 @@
 
 ## Coming soon.
 ## Currently working on
+### You will need to be root user for this!
 First install lynx on your server:
 ```
 apt-get install lynx -y
