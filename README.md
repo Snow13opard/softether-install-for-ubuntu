@@ -1,7 +1,7 @@
 # softether-install-for-ubuntu
 
 ## Coming soon.
-## Currently working on
+## Currently working on.
 ### You will need to be root user for this!
 First install lynx on your server:
 ```
@@ -66,12 +66,14 @@ do
 /usr/local/vpnserver/vpnserver start
 done
 ```
+Save the file.
+
+Add permissions to the script:
 ```
 chmod +x /usr/local/bin/softether.sh
 ```
-Save the file.
 
-Add config to supervisor:
+Add softether startup config to supervisor:
 ```
 sudo nano /etc/supervisor/conf.d/softether.conf
 ```
