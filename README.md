@@ -60,13 +60,13 @@ sudo nano /etc/supervisor/conf.d/softether.conf
 Paste this:
 ```
 [program:softether]
-command = /usr/local/vpnserver/vpnserver start
-stopsignal = stop
-user = root
-autostart = true
-autorestart = true
-stdout_logfile = /var/log/supervisor/softether.log
-stderr_logfile = /var/log/supervisor/softether_err.log
+command=/usr/local/vpnserver/vpnserver
+stopsignal=stop
+user=root
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/supervisor/softether.log
+stderr_logfile=/var/log/supervisor/softether_err.log
 ```
 Save the file.
 
