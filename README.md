@@ -8,25 +8,18 @@ apt-get install lynx -y
 ```
 Download SoftEther with these commands:
 ```
-cd /tmp
+cd ~/
 ```
 ```
 wget https://raw.githubusercontent.com/Snow13opard/softether-install-for-ubuntu/master/softetherupdatelynx
 ```
 ```
-lynx -cmd_script=/tmp/softetherupdate http://www.softether-download.com/files/softether/
+lynx -cmd_script=softetherupdatelynx http://www.softether-download.com/files/softether/
 ```
 Install and Configure SoftEther
 ```
-cd ~/
-```
-```
 tar xzvf softether* && mv softether* /tmp
 ```
-```
-mv
-```
-cd /tmp
 
 apt-get install build-essential -y
 
