@@ -2,18 +2,30 @@
 
 ## Coming soon.
 ## Currently working on
+First install lynx on your server:
+```
 apt-get install lynx -y
-
+```
+Download SoftEther with these commands:
+```
 cd /tmp
-
+```
+```
 wget https://raw.githubusercontent.com/Snow13opard/softether-install-for-ubuntu/master/softetherupdatelynx
-
+```
+```
 lynx -cmd_script=/tmp/softetherupdate http://www.softether-download.com/files/softether/
-
+```
+Install and Configure SoftEther
+```
 cd ~/
-
+```
+```
 tar xzvf softether* && mv softether* /tmp
-
+```
+```
+mv
+```
 cd /tmp
 
 apt-get install build-essential -y
