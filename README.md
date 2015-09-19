@@ -18,7 +18,7 @@ lynx -cmd_script=softetherupdatelynx http://www.softether-download.com/files/sof
 ```
 Install and Configure SoftEther
 ```
-tar xzvf softether* && mv softether* /tmp
+tar xzvf softether-vpnserver*
 ```
 ```
 apt-get install build-essential -y
