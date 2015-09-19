@@ -94,6 +94,7 @@ supervisorctl reread
 ```
 supervisorctl update
 ```
+## Using vpncmd and setting up SoftEther
 Check to see If SoftEther Is running:
 ```
 cd /usr/local/vpnserver
