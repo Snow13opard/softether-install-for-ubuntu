@@ -60,7 +60,7 @@ sudo nano /etc/supervisor/conf.d/softether.conf
 Paste this:
 ```
 [program:softether]
-command=/usr/local/vpnserver/vpnserver
+command=/usr/local/vpnserver/vpnserver start
 stopsignal=stop
 user=root
 autostart=true
