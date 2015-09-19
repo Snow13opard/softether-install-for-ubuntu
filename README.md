@@ -94,3 +94,14 @@ supervisorctl reread
 ```
 supervisorctl update
 ```
+Check to see If SoftEther Is running:
+```
+cd /usr/local/vpnserver
+./vpncmd
+```
+Press 3 to use VPN tools and hit enter.
+
+Now type:
+```
+check
+```
