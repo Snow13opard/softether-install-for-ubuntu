@@ -1,0 +1,38 @@
+
+vpncmd commands:
+
+Status:
+“check”
+
+Set Server Administration Password:
+“ServerPasswordSet”
+
+Create a VPN Hub:
+“HubCreate VPN”
+
+Select Hub:
+“Hub VPN”
+
+Create a user:
+“UserCreate test”
+
+Delete a user:
+“UserDelete test”
+
+Set User Password:
+“UserPasswordSet test”
+
+Enable SecureNAT:
+“SecureNatEnable”
+
+Setup L2TP/IPSec
+“IPsecEnable”
+
+
+Other commands that may be useful:
+
+Get Server Information:
+“ServerInfoGet”
+
+Server status:
+“ServerStatusGet”

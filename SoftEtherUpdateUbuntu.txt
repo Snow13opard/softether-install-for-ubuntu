@@ -1,0 +1,26 @@
+systemctl stop vpnserver
+
+cd /tmp
+
+lynx http://www.softether-download.com/files/softether/
+
+tar xzvf softether-vpnserver-v2.00-9387-rtm-2013.09.16-linux-x86-32bit.tar.gz
+
+cd vpnserver
+
+make
+
+cd ..
+
+sudo cp -r vpnserver /usr/local
+
+cd /usr/local/vpnserver
+
+chmod 600 *
+chmod 700 vpnserver
+chmod 700 vpncmd
+
+systemctl start vpnserver
+systemctl status vpnserver
+
+sudo reboot
