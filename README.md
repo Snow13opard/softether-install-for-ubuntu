@@ -50,7 +50,7 @@ sudo apt-get install supervisor
 sudo service supervisor start
 
 sudo nano /etc/supervisor/conf.d/softether.conf
-
+```
 [program:softether]
 command = /usr/local/vpnserver/vpnserver start
 stopsignal = stop
@@ -59,7 +59,7 @@ autostart = true
 autorestart = true
 stdout_logfile = /var/log/supervisor/softether.log
 stderr_logfile = /var/log/supervisor/softether_err.log
-
+```
 Save the file.
 
 sudo supervisorctl reload
