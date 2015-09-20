@@ -94,7 +94,7 @@ supervisorctl reread
 ```
 supervisorctl update
 ```
-## VPN Server Manager
+## Setting up server with vpncmd
 To do.
 
 ## Updating SoftEther
