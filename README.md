@@ -7,7 +7,7 @@ First install lynx on your server:
 ```
 apt-get install lynx -y
 ```
-Download SoftEther with these commands:
+Download latest SoftEther with these commands:
 ```
 cd ~/
 ```
